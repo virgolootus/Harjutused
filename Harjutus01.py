@@ -14,4 +14,4 @@ print('^^ "" ^^')
 #ruudu pindala
 a = int(input("sisesta ruudu küljepikkus: "))
 s = a * a
-print("Vastus: euudu pindala on ", str(s)+"cm⌃2")
+print("Vastus: ruudu pindala on ", str(s)+"cm⌃2")
