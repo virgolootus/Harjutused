@@ -12,6 +12,6 @@ print("( \__/ )")
 print('^^ "" ^^')
 
 #ruudu pindala
-a = int(input("sisesta ruudu külejpikkus: "))
+a = int(input("sisesta ruudu küljepikkus: "))
 s = a * a
 print("Vastus: euudu pindala on ", str(s)+"cm⌃2")
