@@ -2,6 +2,14 @@
 #Virgo Lootus
 #03.02.2022
 
+
+'''
+#ruutude ja kuupide arv
+
+for a in range(1,11):
+    print(f"{a:5} {a**2:5} {a**3:5}")
+
+
 #pank
 konto = 0
 raha = int(input("sisestage summa: "))
@@ -13,12 +21,10 @@ print(f"{'Aasta':4} {'Algsumma':10} {'Intress':10} {'Aasta lõpuks':10}")
 for a in range(aastad):
     kasum = konto*intress
     print(f"{a+1:4} {konto:10.2f} {kasum:10.2f} {konto+kasum:10.2f}")
-    konto+=kasum
-    
+    konto+=kasum    
 
 
-'''
-#arvamusmäng
+#arvamismäng
 
 import random
 
