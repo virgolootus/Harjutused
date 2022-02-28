@@ -22,7 +22,7 @@ print(kuup)
 #Eesti kuup
 
 kuup = date.today()
-p1 = kuup.strftime("%d. Veebruar  %Y")  #:D
+p1 = kuup.strftime("%d.  Märts  %Y")  #:D
 print(p1)
 
 
