@@ -1,12 +1,72 @@
+#4.6
+kuup = "08.03.2022"
+def kuu_nimi(a):
+    ekkuud = ["","jaanuar","veebruar","märts"]
+    return ekkuud[a]
+       
+def kuupaev_sonana(a):
+    k,p,aa = a.split(".")
+    kp = (f"{k}. {kuu_nimi(int(p))} {aa}")
+    return kp
+print(kuupaev_sonana(kuup))
 
+
+#4.5
+def pronks():
+    konto = 0
+    for a in open("mündid.txt"):
+        if int(a) <= 5:
+            konto += int(a)
+    print(konto)
+pronks()
+#4.4
+arv = int(input("Sisesta külaliste arv: "))
+def tervitus(a):
+    
+    for i in range(a):
+        print('Võõrustaja: "Tere!"')
+        print(f'Täna {i+1}. kord tervitada, mõtiskleb võõrustaja')
+        print('Külaline: "Suur tänu kutse eest!"')
+tervitus(arv)
+#4.3
+def eelarve(i):
+    inimesed = 10 * i + 55
+    return inimesed
+g = int(input("Mitu inimest on kutsutud: "))
+t = int(input("Mitu inimest ei tule: "))
+print('max_eelarve: ' ,eelarve(g))
+print('min_eelarve: ' ,eelarve(t)) 
+#4.2
+kogus = int(input("Sisestage õunad kilodes: "))
+def mahlapakkide_arv(x):
+    kogus = x*0.4/3
+    return round(kogus)
+print(mahlapakkide_arv(kogus))
+#4.1
+def banner(a):
+    l = a.upper()
+    return l 
+h = int(input("kordade arv: "))
+for i in range(h):
+    print(banner("osta noonesid"))
+
+#3.5
+fail = open("nimekiri.txt")
+n = 1
+for i in fail:
+    if n == datetime.now().day:
+        print(i)
+    n += 1
 #3.4
 fail = input("Palun sisestage faili nimi: ")
 fail = open(fail,encoding="UTF-8")
-number = 1
+number = 0
 for i in fail:
-    print(number". ", i,end="")
     number+=1
+    print(str(number)+". " +str(i),end="")
+print("\n")
 
+    
 
 #3.3
 fail = open("konto.txt", encoding="UTF-8")
@@ -78,8 +138,10 @@ korrad = int(input("mitu korda peaks äratama: "))
 
 for a in range(korrad):
     print("Tõuse ja sära")
+    
 #1.4
 def bussid():
+    
     inimesed = int(input("Sisesta inimeste arv: "))
     istekohad = int(input("Sisesta bussi kohtade arv: "))
     viimane = inimesed%istekohad
@@ -94,15 +156,18 @@ bussid()
 
 #1.2
 def liblikas():
+    
     aasta = 2020
     liblikas = "teelehe-mosaiikliblikas"
     lause_keskosa = ". aasta liblikas on"
     lause = str(aasta)+lause_keskosa+liblikas
     print(lause)
+    
 liblikas()
 #1.1
 
-def tere():
+def tervitus():
+    
     print("Tere, maailm!")
-tere()
-
+    
+tervitus()
